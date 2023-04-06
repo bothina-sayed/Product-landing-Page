@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Starbucks Website landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#" ><img src="clipart1628167.png" class="logo"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New </a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just Donut<br>It's <span>Dunkin'</span></h2>
+                    <p>
+                        Dunkin' Donuts is a global chain of coffeehouses and baked goods stores.
+                        The company was founded in 1950 in Massachusetts, United States, and has since expanded to over 12,000 locations
+                        in 36 countries worldwide.</p>
+                       <a href="#">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="—Pngtree—a pile of baked bread_5539728.png" class="starbucks">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="pngwing.com (1).png" onclick="imgSlider('pngwing.com (1).png');changeCircleColor('#eb7495')"></li>
+                <li><img src="pngwing.com (2).png" onclick="imgSlider('pngwing.com (2).png');changeCircleColor('#4F200D')"></li>
+                <li><img src="pngwing.com.png" onclick="imgSlider('pngwing.com.png');changeCircleColor('#F6F1E9')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.starbucks').src = anything;
+
+            }
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+    </body>
+</html>
