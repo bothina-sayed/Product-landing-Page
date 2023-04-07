@@ -46,11 +46,10 @@ header ul li
 }
 header ul li a:hover
 {
-    padding: 8px 20px;
-    background: #eb7495;
-    color: #fff;
-    border-radius: 40px;
-    text-decoration: underline;}
+    color: #eb7495;
+    text-decoration: underline;
+    
+}
 header ul li a 
 {
     display: inline-block;
@@ -79,7 +78,7 @@ header ul li a
     line-height: 1.4em;
     font-weight: 500;
 }
-.content .textBox h2 span
+.content .textBox h2 .DunkinText
 {
     color: #eb7495;
     font-size: 1.2em;

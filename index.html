@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Starbucks Website landing Page</title>
+        <title>Product landing Page</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -19,12 +19,12 @@
             </header>
             <div class="content">
                 <div class="textBox">
-                    <h2>It's not just Donut<br>It's <span>Dunkin'</span></h2>
+                    <h2>It's not just Donut<br>It's <span class="DunkinText">Dunkin'</span></h2>
                     <p>
                         Dunkin' Donuts is a global chain of coffeehouses and baked goods stores.
                         The company was founded in 1950 in Massachusetts, United States, and has since expanded to over 12,000 locations
                         in 36 countries worldwide.</p>
-                       <a href="#">Learn More</a>
+                       <a href="#" >Learn More</a>
                 </div>
                 <div class="imgBox">
                     <img src="./images/—Pngtree—a pile of baked bread_5539728.png" class="starbucks">
@@ -33,7 +33,7 @@
             <ul class="thumb">
                 <li><img src="./images/pngwing.com (1).png" onclick="imgSlider('./images/pngwing.com (1).png');changeCircleColor('#eb7495')"></li>
                 <li><img src="./images/pngwing.com (2).png" onclick="imgSlider('./images/pngwing.com (2).png');changeCircleColor('#4F200D')"></li>
-                <li><img src="./images/pngwing.com.png" onclick="imgSlider('./images/pngwing.com.png');changeCircleColor('#F6F1E9')"></li>
+                <li><img src="./images/pngwing.com.png" onclick="imgSlider('./images/pngwing.com.png');changeCircleColor('#F5E9CF')"></li>
             </ul>
             <ul class="sci">
                 <li><a href="#"><img src="./images/facebook.png"></a></li>
@@ -41,15 +41,6 @@
                 <li><a href="#"><img src="./images/instagram.png"></a></li>
             </ul>
         </section>
-        <script type="text/javascript">
-            function imgSlider(anything){
-                document.querySelector('.starbucks').src = anything;
-
-            }
-            function changeCircleColor(color){
-                const circle = document.querySelector('.circle');
-                circle.style.background = color;
-            }
-        </script>
+        <script src="main.js"></script>
     </body>
 </html>
