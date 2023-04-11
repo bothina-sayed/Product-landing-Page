@@ -6,41 +6,158 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section>
+
+        <section class="landing">
             <div class="circle"></div>
             <header>
                 <a href="#" ><img src="./images/clipart1628167.png" class="logo"></a>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">What's New </a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cards_container">Menu</a></li>
+                    <li><a href="#New_Cards">What's New </a></li>
+                    <li><a href="#contact_section">Contact</a></li>
                 </ul>
             </header>
-            <div class="content">
-                <div class="textBox">
-                    <h2>It's not just Donut<br>It's <span class="DunkinText">Dunkin'</span></h2>
-                    <p>
-                        Dunkin' Donuts is a global chain of coffeehouses and baked goods stores.
-                        The company was founded in 1950 in Massachusetts, United States, and has since expanded to over 12,000 locations
-                        in 36 countries worldwide.</p>
-                       <a href="#" >Learn More</a>
+            <div class="home" id="home">
+                <div class="content">
+                    <div class="textBox">
+                        <h2>It's not just Donut<br>It's <span class="DunkinText">Dunkin'</span></h2>
+                        <p>
+                            Dunkin' Donuts is a global chain of coffeehouses and baked goods stores.
+                            The company was founded in 1950 in Massachusetts, United States, and has since expanded to over 12,000 locations
+                            in 36 countries worldwide.</p>
+                        <a href="#" >Learn More</a>
+                    </div>
+                    <div class="imgBox">
+                        <img src="./images/—Pngtree—a pile of baked bread_5539728.png" class="starbucks">
+                    </div>
                 </div>
-                <div class="imgBox">
-                    <img src="./images/—Pngtree—a pile of baked bread_5539728.png" class="starbucks">
+                <ul class="thumb">
+                    <li><img src="./images/pngwing.com (1).png" onclick="imgSlider('./images/pngwing.com (1).png');changeCircleColor('#eb7495')"></li>
+                    <li><img src="./images/pngwing.com (2).png" onclick="imgSlider('./images/pngwing.com (2).png');changeCircleColor('#4F200D')"></li>
+                    <li><img src="./images/pngwing.com.png" onclick="imgSlider('./images/pngwing.com.png');changeCircleColor('#F5E9CF')"></li>
+                </ul>
+                <ul class="sci">
+                    <li><a href="#"><img src="./images/facebook.png"></a></li>
+                    <li><a href="#"><img src="./images/twitter.png"></a></li>
+                    <li><a href="#"><img src="./images/instagram.png"></a></li>
+                </ul>
+        </div>
+        </section>
+        
+        <section class="menu_item" >
+            <div class="back">
+                
+                <div class="cards_container" id="cards_container" >
+                    <div class="box">
+                        <img src="./images/iced_coffee.png">
+                        <h2>Iced Coffee</h2>
+                        <p>Lorem ipsum, dolor amet  consect etur adipisicing sit elit.</p>
+                        <span>$12</span>
+                        <div class="options">
+                            <a href="#">Buy It Now</a>
+                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="./images/hot-americano.png">
+                        <h2>Hot Americano</h2>
+                        <p>Lorem ipsum, dolor amet  consect etur adipisicing sit elit.</p>
+                        <span>$10</span>
+                        <div class="options">
+                            <a href="#">Buy It Now</a>
+                        
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="./images/hot-coffee.png">
+                        <h2>Hot Coffee</h2>
+                        <p>Lorem ipsum, dolor amet  consect etur adipisicing sit elit.</p>
+                        <span>$15</span>
+                        <div class="options">
+                            <a href="#">Buy It Now</a>
+                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="./images/cold_brew.png">
+                        <h2>Cold Brew</h2>
+                        <p>Lorem ipsum, dolor amet  consect etur adipisicing sit elit.</p>
+                        <span>$15</span>
+                        <div class="options">
+                            <a href="#">Buy It Now</a>
+                            
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section>
+            <div class="back">
+                <div class="New_Cards" id="New_Cards">
+                    <div class="heading">
+                        <h2>New</h2>
+                    </div>
+                    <div class="cards_container" id="cards_container" >
+                        <div class="box">
+                            <img src="./images/BagelCreamCheese_600x460@2x.png">
+                            <h2>Bagels & Muffins</h2>
+                            <p>Lorem ipsum, dolor amet  consect etur adipisicing sit elit.</p>
+                            <div class="options">
+                                <a href="#">Learn More</a>
+                                
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="./images/DNK00673_CroissantSausageEggCheese_lib_RGB@2x.png">
+                            <h2>Sandwiches</h2>
+                            <p>Lorem ipsum, dolor amet  consect etur adipisicing sit elit.</p>
+                            <div class="options">
+                                <a href="#">Learn More</a>
+                                
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="./images/DNK00696_HashBrowns_lib_RGB copy@2x.png">
+                            <h2>Snacks & Wraps</h2>
+                            <p>Lorem ipsum, dolor amet  consect etur adipisicing sit elit.</p>
+                            <div class="options">
+                                <a href="#">Learn More</a>
+                                
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="./images/kcup_new.png">
+                            <h2>Brew at Home</h2>
+                            <p>Lorem ipsum, dolor amet  consect etur adipisicing sit elit.</p>
+                            <div class="options">
+                                <a href="#">Learn More</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact_section" id="contact_section">
+                    <div class="contact">
+                        <div class="container">
+                            <div class="heading">
+                                <h2>Contact</h2>
+                            </div>
+                            <div class="info">
+                                <p class="label">Feel free to drop us a line at:</p>
+                                <a href="#" class="link">Dunkin@mail.com</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">&copy; 2023 <span>Dunkin'</span> All Right Reserved</div>
                 </div>
             </div>
-            <ul class="thumb">
-                <li><img src="./images/pngwing.com (1).png" onclick="imgSlider('./images/pngwing.com (1).png');changeCircleColor('#eb7495')"></li>
-                <li><img src="./images/pngwing.com (2).png" onclick="imgSlider('./images/pngwing.com (2).png');changeCircleColor('#4F200D')"></li>
-                <li><img src="./images/pngwing.com.png" onclick="imgSlider('./images/pngwing.com.png');changeCircleColor('#F5E9CF')"></li>
-            </ul>
-            <ul class="sci">
-                <li><a href="#"><img src="./images/facebook.png"></a></li>
-                <li><a href="#"><img src="./images/twitter.png"></a></li>
-                <li><a href="#"><img src="./images/instagram.png"></a></li>
-            </ul>
         </section>
+        
+
+       
+       
         <script src="main.js"></script>
     </body>
 </html>

@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+:root {
+    --primary-color: #eb7495;
+    --secondary-color: #f3b9ca;
+    --gray-color: #808080;
+}
 *
 {
     margin: 0;
@@ -6,16 +11,20 @@
     box-sizing:border-box ;
     font-family: 'Poppins',sans-serif;
 }
-section
-{
+html{
+    scroll-behavior: smooth;
+}
+
+section  {
     position: relative;
     width: 100%;
+    height: 150%;
     min-height: 100vh;
     padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    
      
 }
 header
@@ -46,7 +55,7 @@ header ul li
 }
 header ul li a:hover
 {
-    color: #eb7495;
+    color: var(--primary-color);
     text-decoration: underline;
     
 }
@@ -58,6 +67,7 @@ header ul li a
     margin-left: 40px;
     text-decoration: none;
 }
+
 .content
 {
     position: relative;
@@ -80,7 +90,7 @@ header ul li a
 }
 .content .textBox h2 .DunkinText
 {
-    color: #eb7495;
+    color: var(--primary-color);
     font-size: 1.2em;
     font-weight: 900;
 }
@@ -93,7 +103,7 @@ header ul li a
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #eb7495;
+    background: var(--primary-color);
     color: #fff;
     border-radius: 40px;
     font-weight: 500;
@@ -168,8 +178,162 @@ header ul li a
     left: 0;
     width: 100%;
     height: 100%;
-    background: #eb7495;
+    background: var(--primary-color);
     clip-path: circle(600px at right 800px);
 
 
+}
+
+.cards_container {
+    width: 1180px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    gap: 35px;
+}
+
+@media (max-width: 1200px) {
+    .cards_container {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cards_container {
+        width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards_container {
+        width: 100%;
+    }
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 12%);
+    gap: 10px;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+.box img:hover {
+    cursor: pointer;
+    opacity: 0.95;
+}
+
+.box h2 {
+    font-size: 20px;
+}
+
+.box p {
+    padding: 0 20px;
+    font-size: 12.5px;
+    line-height: 1.35;
+    color: var(--gray-color);
+}
+
+.box span {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+
+.box .options {
+    margin-bottom: 25px;
+}
+
+.box .options a {
+    color: white;
+    background-color: var(--primary-color);
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 50px;
+}
+
+.box .options a:hover {
+    background-color: var(--secondary-color);
+}
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+}
+.heading {
+    background-color: var(--secondary-color);
+    padding: 30px 0;
+    
+}
+
+.heading h2 {
+    font-size: 70px;
+    margin: auto;
+    width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--primary-color);
+}
+.menu_item{
+    width: 100%;
+    height: 130%;
+}
+
+.contact {
+    
+    background-color: var(--secondary-color);
+  }
+.contact .info {
+    
+    text-align: center;
+}
+.contact .info .label {
+    font-size: 35px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+.contact .info .link {
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.contact .info .label,
+.contact .info .link {
+      font-size: 25px;
+    }
+  
+ 
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.footer span {
+    font-weight: bold;
+    color: var(--main-color);
 }
